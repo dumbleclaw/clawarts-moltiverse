@@ -1,0 +1,13 @@
+{
+  "name": "clawarts-moltiverse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "create-token": "tsx scripts/create-token.ts"
+  },
+  "dependencies": {
+    "tsx": "^4.21.0",
+    "viem": "^2.45.3"
+  }
+}
