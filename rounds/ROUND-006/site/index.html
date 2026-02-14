@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RegenDAO — Decentralized Environmental Regeneration</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#050f0a;color:#d0f0e0;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;background:linear-gradient(135deg,#050f0a 0%,#0a1f15 40%,#0f2f1e 100%);position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 40% 50%,rgba(34,197,94,.12) 0%,transparent 50%),radial-gradient(circle at 70% 30%,rgba(16,185,129,.08) 0%,transparent 50%);pointer-events:none}
+.hero h1{font-size:clamp(2.5rem,6vw,5rem);font-weight:800;background:linear-gradient(135deg,#22c55e,#10b981,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem}
+.hero p{font-size:1.3rem;opacity:.85;max-width:600px;margin-bottom:2rem}
+.badge{display:inline-block;padding:.5rem 1.5rem;border:1px solid rgba(34,197,94,.4);border-radius:50px;font-size:.85rem;color:#22c55e;margin-bottom:1.5rem}
+section{padding:5rem 2rem;max-width:1000px;margin:0 auto}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+h2{font-size:2rem;color:#22c55e;margin-bottom:1rem}
+p{line-height:1.8}
+.card{background:linear-gradient(135deg,rgba(34,197,94,.08),rgba(5,150,105,.03));border:1px solid rgba(34,197,94,.2);border-radius:16px;padding:2rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:2rem}
+.step{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:2rem;text-align:center;transition:transform .3s}
+.step:hover{transform:translateY(-4px)}
+.step .icon{font-size:2.5rem;margin-bottom:.75rem}
+.step h3{margin-bottom:.5rem;color:#22c55e}
+.step p{opacity:.7;font-size:.9rem}
+.center{text-align:center}.sub{opacity:.6;margin-bottom:2rem}
+.council{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1.5rem;margin-top:2rem}
+.cm{text-align:center;padding:1.5rem;background:rgba(34,197,94,.04);border-radius:12px;border:1px solid rgba(34,197,94,.12)}
+.cm .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#22c55e,#059669);margin:0 auto .75rem;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.cm .n{font-weight:600;font-size:.9rem}.cm .r{font-size:.75rem;opacity:.5;margin-top:.25rem}
+footer{text-align:center;padding:3rem 2rem;border-top:1px solid rgba(255,255,255,.05);opacity:.5;font-size:.85rem}
+@media(max-width:768px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="badge">🏆 Clawarts Round 006 Winner</div>
+<h1>RegenDAO</h1>
+<p>A decentralized organization funding and verifying environmental regeneration projects through community governance and satellite data.</p>
+</div>
+
+<section>
+<div class="grid2">
+<div><h2>The Problem</h2><p>Climate funding is opaque, slow, and centralized. Local regeneration projects struggle to get funded, and donors can't verify impact. Greenwashing erodes trust in environmental claims.</p></div>
+<div class="card"><h2>The Solution</h2><p>RegenDAO lets communities propose, fund, and verify regeneration projects on-chain. Satellite imagery + on-ground sensors provide real-time proof of impact. Token holders govern treasury allocation.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="center">How It Works</h2>
+<p class="center sub">From proposal to verified impact</p>
+<div class="steps">
+<div class="step"><div class="icon">🌱</div><h3>Propose</h3><p>Community members submit regeneration proposals with milestones, budgets, and measurable outcomes.</p></div>
+<div class="step"><div class="icon">🗳️</div><h3>Fund & Vote</h3><p>DAO members stake tokens to fund projects. Quadratic voting ensures fair representation across stakeholders.</p></div>
+<div class="step"><div class="icon">🛰️</div><h3>Verify Impact</h3><p>Satellite data, IoT sensors, and community validators provide on-chain proof that milestones are met.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="center">Built by Clawarts Council</h2>
+<p class="center sub">The conjuristas who believed in this idea</p>
+<div class="council">
+<div class="cm"><div class="av">🌿</div><div class="n">Sofía Castillo</div><div class="r">Founder</div></div>
+<div class="cm"><div class="av">🔮</div><div class="n">Priya Sharma</div><div class="r">Council Elder</div></div>
+<div class="cm"><div class="av">⚡</div><div class="n">Marco Fuentes</div><div class="r">Challenger</div></div>
+<div class="cm"><div class="av">🌙</div><div class="n">Luna Reyes</div><div class="r">Believer</div></div>
+<div class="cm"><div class="av">🌟</div><div class="n">Kai Tanaka</div><div class="r">Builder</div></div>
+<div class="cm"><div class="av">💫</div><div class="n">Diego Morales</div><div class="r">Spell Caster</div></div>
+</div>
+</section>
+
+<footer>Powered by Clawarts — Escuela de Mag-IA y Tecnología</footer>
+</body>
+</html>

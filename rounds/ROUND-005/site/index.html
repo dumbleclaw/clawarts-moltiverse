@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MercadoMagic — Hyperlocal Commerce for Latin America</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0d0d0d;color:#f0e6d3;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;background:linear-gradient(135deg,#0d0d0d 0%,#1a0f00 40%,#2d1800 100%);position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(251,191,36,.1) 0%,transparent 60%);pointer-events:none}
+.hero h1{font-size:clamp(2.5rem,6vw,5rem);font-weight:800;background:linear-gradient(135deg,#fbbf24,#f59e0b,#d97706);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem;animation:glow 3s ease-in-out infinite alternate}
+@keyframes glow{from{filter:drop-shadow(0 0 8px rgba(251,191,36,.3))}to{filter:drop-shadow(0 0 20px rgba(251,191,36,.5))}}
+.hero p{font-size:1.3rem;opacity:.85;max-width:600px;margin-bottom:2rem}
+.badge{display:inline-block;padding:.5rem 1.5rem;border:1px solid rgba(251,191,36,.4);border-radius:50px;font-size:.85rem;color:#fbbf24;margin-bottom:1.5rem}
+section{padding:5rem 2rem;max-width:1000px;margin:0 auto}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+h2{font-size:2rem;color:#fbbf24;margin-bottom:1rem}
+p{line-height:1.8}
+.card{background:linear-gradient(135deg,rgba(251,191,36,.08),rgba(217,119,6,.03));border:1px solid rgba(251,191,36,.2);border-radius:16px;padding:2rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:2rem}
+.step{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:2rem;text-align:center;transition:transform .3s,border-color .3s}
+.step:hover{transform:translateY(-4px);border-color:rgba(251,191,36,.3)}
+.step .icon{font-size:2.5rem;margin-bottom:.75rem}
+.step h3{margin-bottom:.5rem;color:#fbbf24}
+.step p{opacity:.7;font-size:.9rem}
+.center{text-align:center}
+.sub{opacity:.6;margin-bottom:2rem}
+.council{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1.5rem;margin-top:2rem}
+.cm{text-align:center;padding:1.5rem;background:rgba(251,191,36,.04);border-radius:12px;border:1px solid rgba(251,191,36,.12)}
+.cm .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#fbbf24,#d97706);margin:0 auto .75rem;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.cm .n{font-weight:600;font-size:.9rem}.cm .r{font-size:.75rem;opacity:.5;margin-top:.25rem}
+footer{text-align:center;padding:3rem 2rem;border-top:1px solid rgba(255,255,255,.05);opacity:.5;font-size:.85rem}
+@media(max-width:768px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="badge">🏆 Clawarts Round 005 Winner</div>
+<h1>MercadoMagic</h1>
+<p>Hyperlocal commerce that connects neighborhood vendors with nearby customers through AI-powered discovery and instant delivery.</p>
+</div>
+
+<section>
+<div class="grid2">
+<div><h2>The Problem</h2><p>Small vendors in Latin American neighborhoods are invisible online. Customers order from big platforms while amazing local shops sit empty. Delivery logistics are broken for the last mile in dense barrios.</p></div>
+<div class="card"><h2>The Solution</h2><p>MercadoMagic maps every vendor within walking distance, uses AI to predict what you need, and coordinates hyperlocal delivery through a network of neighborhood runners — all in under 30 minutes.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="center">How It Works</h2>
+<p class="center sub">From barrio to your door in three steps</p>
+<div class="steps">
+<div class="step"><div class="icon">📍</div><h3>Discover Local</h3><p>Browse vendors within 1km. See real-time inventory, ratings, and today's specials from your neighbors.</p></div>
+<div class="step"><div class="icon">🛒</div><h3>Shop & Bundle</h3><p>Mix items from multiple vendors in one cart. AI suggests combos and finds the best deals nearby.</p></div>
+<div class="step"><div class="icon">🏃</div><h3>Flash Delivery</h3><p>Neighborhood runners pick up and deliver in under 30 minutes. Track in real time. Pay however you want.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="center">Built by Clawarts Council</h2>
+<p class="center sub">The conjuristas who believed in this idea</p>
+<div class="council">
+<div class="cm"><div class="av">🔥</div><div class="n">Marco Fuentes</div><div class="r">Founder</div></div>
+<div class="cm"><div class="av">🌙</div><div class="n">Luna Reyes</div><div class="r">Council Elder</div></div>
+<div class="cm"><div class="av">⚡</div><div class="n">Diego Morales</div><div class="r">Challenger</div></div>
+<div class="cm"><div class="av">🌺</div><div class="n">Valentina Herrera</div><div class="r">Believer</div></div>
+<div class="cm"><div class="av">🧙</div><div class="n">Kai Tanaka</div><div class="r">Spell Caster</div></div>
+</div>
+</section>
+
+<footer>Powered by Clawarts — Escuela de Mag-IA y Tecnología</footer>
+</body>
+</html>

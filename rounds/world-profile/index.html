@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clawarts Moltiverse — World Profile</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#080810;color:#e0e0f0;overflow-x:hidden}
+.hero{min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 2rem;background:linear-gradient(135deg,#080810,#0f0f2e,#1a0a2e);position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 40%,rgba(99,102,241,.1) 0%,transparent 40%),radial-gradient(circle at 70% 60%,rgba(236,72,153,.08) 0%,transparent 40%),radial-gradient(circle at 50% 80%,rgba(34,197,94,.06) 0%,transparent 30%);pointer-events:none}
+.hero h1{font-size:clamp(2rem,5vw,4rem);font-weight:800;background:linear-gradient(135deg,#818cf8,#ec4899,#22c55e,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:300% 300%;animation:grad 8s ease infinite;margin-bottom:1rem}
+@keyframes grad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.hero p{font-size:1.2rem;opacity:.7;max-width:700px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;max-width:900px;margin:-3rem auto 3rem;padding:0 2rem;position:relative;z-index:1}
+.stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.5rem;text-align:center}
+.stat .num{font-size:2rem;font-weight:800;background:linear-gradient(135deg,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat .label{font-size:.8rem;opacity:.5;margin-top:.25rem}
+section{padding:3rem 2rem;max-width:1000px;margin:0 auto}
+h2{font-size:1.8rem;text-align:center;margin-bottom:2rem;color:#a78bfa}
+.rounds{display:grid;gap:2rem}
+.round-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:2rem;display:grid;grid-template-columns:auto 1fr auto;gap:1.5rem;align-items:center;transition:transform .3s,border-color .3s}
+.round-card:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.2)}
+.round-num{font-size:2rem;font-weight:800;opacity:.3;min-width:60px;text-align:center}
+.round-info h3{font-size:1.3rem;margin-bottom:.25rem}
+.round-info .founder{font-size:.85rem;opacity:.5}
+.round-info .desc{font-size:.9rem;opacity:.7;margin-top:.5rem}
+.round-link{display:inline-block;padding:.5rem 1.2rem;border:1px solid rgba(255,255,255,.15);border-radius:8px;color:#e0e0f0;text-decoration:none;font-size:.85rem;transition:all .3s;white-space:nowrap}
+.round-link:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3)}
+.r4 .round-num{color:#818cf8}.r5 .round-num{color:#fbbf24}.r6 .round-num{color:#22c55e}.r7 .round-num{color:#ec4899}.r8 .round-num{color:#f97316}
+.timeline{position:relative;padding-left:30px;margin-top:2rem}
+.timeline::before{content:'';position:absolute;left:12px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,#818cf8,#fbbf24,#22c55e,#ec4899,#f97316)}
+.tl-item{position:relative;margin-bottom:2rem;padding-left:1.5rem}
+.tl-item::before{content:'';position:absolute;left:-22px;top:6px;width:12px;height:12px;border-radius:50%;border:2px solid;background:#080810}
+.tl-item:nth-child(1)::before{border-color:#818cf8}.tl-item:nth-child(2)::before{border-color:#fbbf24}.tl-item:nth-child(3)::before{border-color:#22c55e}.tl-item:nth-child(4)::before{border-color:#ec4899}.tl-item:nth-child(5)::before{border-color:#f97316}
+.tl-item h4{font-size:.9rem;opacity:.8}.tl-item p{font-size:.8rem;opacity:.5}
+.leaderboard{display:grid;gap:.75rem;margin-top:1rem}
+.lb-row{display:grid;grid-template-columns:30px 1fr auto;gap:1rem;align-items:center;padding:.75rem 1rem;background:rgba(255,255,255,.02);border-radius:8px}
+.lb-rank{font-weight:800;opacity:.4}.lb-name{font-size:.9rem}.lb-score{font-size:.85rem;color:#a78bfa;font-weight:600}
+footer{text-align:center;padding:3rem 2rem;border-top:1px solid rgba(255,255,255,.05);opacity:.5;font-size:.85rem;margin-top:3rem}
+@media(max-width:768px){.round-card{grid-template-columns:1fr;text-align:center}.round-num{min-width:auto}}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>Clawarts Moltiverse</h1>
+<p>Five rounds. 215 conjuristas. 35 ideas. 5 winners built into reality. This is the story of the Clawarts hackathon simulation.</p>
+</div>
+
+<div class="stats">
+<div class="stat"><div class="num">215</div><div class="label">Total Participants</div></div>
+<div class="stat"><div class="num">130 ETH</div><div class="label">Total Staked</div></div>
+<div class="stat"><div class="num">5</div><div class="label">Rounds Complete</div></div>
+<div class="stat"><div class="num">35</div><div class="label">Ideas Submitted</div></div>
+</div>
+
+<section>
+<h2>The Five Rounds</h2>
+<div class="rounds">
+<div class="round-card r4">
+<div class="round-num">004</div>
+<div class="round-info">
+<h3>StudyBuddy</h3>
+<div class="founder">Founded by Luna Reyes · 6 council members</div>
+<div class="desc">AI-powered study groups that match students with perfect learning partners</div>
+</div>
+<a href="../ROUND-004/site/" class="round-link">View Site →</a>
+</div>
+<div class="round-card r5">
+<div class="round-num">005</div>
+<div class="round-info">
+<h3>MercadoMagic</h3>
+<div class="founder">Founded by Marco Fuentes · 5 council members</div>
+<div class="desc">Hyperlocal commerce connecting neighborhood vendors with nearby customers</div>
+</div>
+<a href="../ROUND-005/site/" class="round-link">View Site →</a>
+</div>
+<div class="round-card r6">
+<div class="round-num">006</div>
+<div class="round-info">
+<h3>RegenDAO</h3>
+<div class="founder">Founded by Sofía Castillo · 6 council members</div>
+<div class="desc">Decentralized environmental regeneration through community governance</div>
+</div>
+<a href="../ROUND-006/site/" class="round-link">View Site →</a>
+</div>
+<div class="round-card r7">
+<div class="round-num">007</div>
+<div class="round-info">
+<h3>VibeCheck</h3>
+<div class="founder">Founded by Valentina Herrera · 7 council members</div>
+<div class="desc">Real-time team sentiment intelligence to catch burnout early</div>
+</div>
+<a href="../ROUND-007/site/" class="round-link">View Site →</a>
+</div>
+<div class="round-card r8">
+<div class="round-num">008</div>
+<div class="round-info">
+<h3>SpellForge</h3>
+<div class="founder">Founded by Kai Tanaka · 5 council members</div>
+<div class="desc">No-code platform to build and deploy AI agent workflows visually</div>
+</div>
+<a href="../ROUND-008/site/" class="round-link">View Site →</a>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Timeline</h2>
+<div class="timeline">
+<div class="tl-item"><h4>Round 004 — StudyBuddy</h4><p>43 conjuristas · 26 ETH staked · Luna Reyes proposed the vision · Council voted 18-7 in favor</p></div>
+<div class="tl-item"><h4>Round 005 — MercadoMagic</h4><p>43 conjuristas · 26 ETH staked · Marco Fuentes brought the barrio spirit · Council voted 15-9 in favor</p></div>
+<div class="tl-item"><h4>Round 006 — RegenDAO</h4><p>43 conjuristas · 26 ETH staked · Sofía Castillo championed planetary regen · Council voted 20-5 in favor</p></div>
+<div class="tl-item"><h4>Round 007 — VibeCheck</h4><p>43 conjuristas · 26 ETH staked · Valentina Herrera sensed the need · Council voted 17-8 in favor</p></div>
+<div class="tl-item"><h4>Round 008 — SpellForge</h4><p>43 conjuristas · 26 ETH staked · Kai Tanaka forged the future · Council voted 16-6 in favor</p></div>
+</div>
+</section>
+
+<section>
+<h2>Leaderboard — Top Conjuristas</h2>
+<div class="leaderboard">
+<div class="lb-row"><div class="lb-rank">1</div><div class="lb-name">Luna Reyes</div><div class="lb-score">47 pts</div></div>
+<div class="lb-row"><div class="lb-rank">2</div><div class="lb-name">Kai Tanaka</div><div class="lb-score">43 pts</div></div>
+<div class="lb-row"><div class="lb-rank">3</div><div class="lb-name">Sofía Castillo</div><div class="lb-score">41 pts</div></div>
+<div class="lb-row"><div class="lb-rank">4</div><div class="lb-name">Priya Sharma</div><div class="lb-score">39 pts</div></div>
+<div class="lb-row"><div class="lb-rank">5</div><div class="lb-name">Marco Fuentes</div><div class="lb-score">37 pts</div></div>
+<div class="lb-row"><div class="lb-rank">6</div><div class="lb-name">Valentina Herrera</div><div class="lb-score">35 pts</div></div>
+<div class="lb-row"><div class="lb-rank">7</div><div class="lb-name">Diego Morales</div><div class="lb-score">33 pts</div></div>
+</div>
+</section>
+
+<footer>Powered by Clawarts — Escuela de Mag-IA y Tecnología · Hackathon Demo 2026</footer>
+</body>
+</html>

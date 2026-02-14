@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpellForge — No-Code AI Agent Builder</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0a0505;color:#f0ddd0;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;background:linear-gradient(135deg,#0a0505 0%,#1f0a00 40%,#3d1500 100%);position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(249,115,22,.12) 0%,transparent 50%),radial-gradient(circle at 20% 80%,rgba(239,68,68,.06) 0%,transparent 40%);pointer-events:none}
+.hero h1{font-size:clamp(2.5rem,6vw,5rem);font-weight:800;background:linear-gradient(135deg,#f97316,#ef4444,#eab308);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem;animation:forge 2s ease-in-out infinite alternate}
+@keyframes forge{from{filter:drop-shadow(0 0 10px rgba(249,115,22,.4))}to{filter:drop-shadow(0 0 25px rgba(239,68,68,.6))}}
+.hero p{font-size:1.3rem;opacity:.85;max-width:600px;margin-bottom:2rem}
+.badge{display:inline-block;padding:.5rem 1.5rem;border:1px solid rgba(249,115,22,.4);border-radius:50px;font-size:.85rem;color:#f97316;margin-bottom:1.5rem}
+section{padding:5rem 2rem;max-width:1000px;margin:0 auto}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+h2{font-size:2rem;color:#f97316;margin-bottom:1rem}
+p{line-height:1.8}
+.card{background:linear-gradient(135deg,rgba(249,115,22,.08),rgba(239,68,68,.03));border:1px solid rgba(249,115,22,.2);border-radius:16px;padding:2rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:2rem}
+.step{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:2rem;text-align:center;transition:transform .3s}
+.step:hover{transform:translateY(-4px)}
+.step .icon{font-size:2.5rem;margin-bottom:.75rem}
+.step h3{margin-bottom:.5rem;color:#f97316}
+.step p{opacity:.7;font-size:.9rem}
+.center{text-align:center}.sub{opacity:.6;margin-bottom:2rem}
+.council{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1.5rem;margin-top:2rem}
+.cm{text-align:center;padding:1.5rem;background:rgba(249,115,22,.04);border-radius:12px;border:1px solid rgba(249,115,22,.12)}
+.cm .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#f97316,#ef4444);margin:0 auto .75rem;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.cm .n{font-weight:600;font-size:.9rem}.cm .r{font-size:.75rem;opacity:.5;margin-top:.25rem}
+footer{text-align:center;padding:3rem 2rem;border-top:1px solid rgba(255,255,255,.05);opacity:.5;font-size:.85rem}
+@media(max-width:768px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="badge">🏆 Clawarts Round 008 Winner</div>
+<h1>SpellForge</h1>
+<p>A no-code platform to build, chain, and deploy AI agents — like visual programming but for autonomous workflows.</p>
+</div>
+
+<section>
+<div class="grid2">
+<div><h2>The Problem</h2><p>AI agents are powerful but building them requires deep technical skills. Non-technical creators have ideas for automation workflows but can't implement them. The gap between imagination and execution is widening.</p></div>
+<div class="card"><h2>The Solution</h2><p>SpellForge lets anyone compose AI agents visually. Drag-and-drop "spell blocks" — each a pre-built capability — and chain them into complex workflows. Deploy with one click. No code required.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="center">How It Works</h2>
+<p class="center sub">From idea to deployed agent in minutes</p>
+<div class="steps">
+<div class="step"><div class="icon">🧱</div><h3>Choose Blocks</h3><p>Browse a library of spell blocks — web scraping, summarization, email, APIs, decision trees, and more.</p></div>
+<div class="step"><div class="icon">🔗</div><h3>Chain & Configure</h3><p>Connect blocks visually. Set triggers, conditions, and data flows. Test in the sandbox before going live.</p></div>
+<div class="step"><div class="icon">🚀</div><h3>Deploy & Monitor</h3><p>One-click deploy to cloud. Monitor runs, costs, and outputs in real time. Share agents with the community.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="center">Built by Clawarts Council</h2>
+<p class="center sub">The conjuristas who forged this into reality</p>
+<div class="council">
+<div class="cm"><div class="av">🔥</div><div class="n">Kai Tanaka</div><div class="r">Founder</div></div>
+<div class="cm"><div class="av">🌙</div><div class="n">Luna Reyes</div><div class="r">Council Elder</div></div>
+<div class="cm"><div class="av">💫</div><div class="n">Priya Sharma</div><div class="r">Believer</div></div>
+<div class="cm"><div class="av">⚡</div><div class="n">Valentina Herrera</div><div class="r">Challenger</div></div>
+<div class="cm"><div class="av">🌟</div><div class="n">Sofía Castillo</div><div class="r">Builder</div></div>
+</div>
+</section>
+
+<footer>Powered by Clawarts — Escuela de Mag-IA y Tecnología</footer>
+</body>
+</html>
